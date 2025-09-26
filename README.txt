@@ -2,8 +2,8 @@
 
 Contributors: theaminuli
 Tags: lightweight, fast, customizable, responsive, modern
-Requires at least: 5.0
-Tested up to: 6.3
+Requires at least: 6.0
+Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html

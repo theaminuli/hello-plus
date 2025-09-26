@@ -21,7 +21,7 @@ Hello Plus is a lightweight, fast, and customizable WordPress theme built for sp
 
 ## Requirements
 
-- WordPress 5.0 or higher
+- WordPress 6.0 or higher
 - PHP 7.4 or higher
 
 ## License
