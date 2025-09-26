@@ -7,9 +7,6 @@ vendor/
 .sass-cache/
 build/
 log/
-composer.lock
-package-lock.json
-yarn.lock
 
 #Cache folder
 .alcache/
