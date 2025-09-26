@@ -2,6 +2,15 @@
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
 .vscode/
+node_modules/
+vendor/
+.sass-cache/
+build/
+log/
+composer.lock
+package-lock.json
+yarn.lock
+
 #Cache folder
 .alcache/
 #Symbols folder
