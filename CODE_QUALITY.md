@@ -131,6 +131,93 @@ npm run lint:css
 npm run lint:css:fix
 ```
 
+## JavaScript Code Standards
+
+The theme includes JavaScript linting with ESLint and WordPress JavaScript coding standards.
+
+### Tools Used
+
+- **ESLint** - JavaScript linting and code quality tool
+- **WordPress ESLint Plugin** - WordPress-specific JavaScript coding rules
+- **Prettier** - Code formatting integration
+
+### Setup
+
+1. Install NPM dependencies:
+   ```bash
+   npm install
+   ```
+
+2. The ESLint configuration is automatically set up in `.eslintrc.json`.
+
+### Usage
+
+**Check JavaScript code:**
+```bash
+npm run lint:js           # Check JavaScript files
+```
+
+**Fix JavaScript code:**
+```bash
+npm run lint:js:fix       # Fix JavaScript formatting automatically
+```
+
+**Combined linting (CSS + JS):**
+```bash
+npm run lint              # Check both CSS and JavaScript
+npm run lint:fix          # Fix both CSS and JavaScript
+npm run format            # Same as lint:fix
+```
+
+### Configuration
+
+The JavaScript linting is configured in `.eslintrc.json` which includes:
+
+- WordPress JavaScript coding standards
+- ES6+ compatibility
+- Browser and jQuery environment support
+- Custom rules for indentation (tabs), quotes (single), and semicolons
+
+### What Gets Checked
+
+- **Code formatting** - Indentation (tabs), spacing, quotes, semicolons
+- **JavaScript best practices** - Variable usage, function definitions
+- **WordPress JavaScript standards** - jQuery usage, global variables
+- **JSDoc comments** - Function documentation
+- **ES6+ compatibility** - Modern JavaScript features
+
+### Example JavaScript Structure
+
+Following WordPress coding standards, JavaScript should be structured like this:
+
+```javascript
+/**
+ * Theme JavaScript functionality
+ *
+ * @package HelloPlus
+ */
+
+/* eslint-env browser, jquery */
+
+( function( $ ) {
+	'use strict';
+
+	/**
+	 * Initializes theme functionality
+	 *
+	 * @return {void}
+	 */
+	function initTheme() {
+		// Theme initialization code
+	}
+
+	// Initialize when DOM is ready
+	$( document ).ready( function() {
+		initTheme();
+	} );
+}( jQuery ) );
+```
+
 ## Pre-commit Hooks
 
 Consider setting up pre-commit hooks to automatically run code quality checks before commits:
@@ -140,4 +227,13 @@ Consider setting up pre-commit hooks to automatically run code quality checks be
 #!/bin/sh
 composer run check
 npm run lint:css
+npm run lint:js
+```
+
+**Or use the combined linting command:**
+```bash
+# Add to .git/hooks/pre-commit
+#!/bin/sh
+composer run check
+npm run lint
 ```

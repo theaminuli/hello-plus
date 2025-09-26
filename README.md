@@ -28,6 +28,7 @@ This theme includes comprehensive code quality tools:
 - **PHP CodeSniffer (phpcs)** with WordPress coding standards
 - **Automatic code formatting** with phpcbf
 - **CSS linting** with Stylelint
+- **JavaScript linting** with ESLint and WordPress standards
 - **PHP 7.4+ compatibility checking**
 
 See [CODE_QUALITY.md](CODE_QUALITY.md) for detailed usage instructions.
@@ -46,6 +47,15 @@ composer run format
 
 # Check CSS
 npm run lint:css
+
+# Check JavaScript
+npm run lint:js
+
+# Check both CSS and JavaScript
+npm run lint
+
+# Fix both CSS and JavaScript
+npm run format
 ```
 
 ## Requirements
