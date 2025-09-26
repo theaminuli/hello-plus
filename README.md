@@ -19,6 +19,35 @@ Hello Plus is a lightweight, fast, and customizable WordPress theme built for sp
 4. Choose the theme .zip file and click **Install Now**
 5. Click **Activate** to start using the theme
 
+## Development
+
+### Code Quality
+
+This theme includes comprehensive code quality tools:
+
+- **PHP CodeSniffer (phpcs)** with WordPress coding standards
+- **Automatic code formatting** with phpcbf
+- **CSS linting** with Stylelint
+- **PHP 7.4+ compatibility checking**
+
+See [CODE_QUALITY.md](CODE_QUALITY.md) for detailed usage instructions.
+
+Quick commands:
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Check PHP code
+composer run check
+
+# Fix PHP formatting
+composer run format
+
+# Check CSS
+npm run lint:css
+```
+
 ## Requirements
 
 - WordPress 6.0 or higher
