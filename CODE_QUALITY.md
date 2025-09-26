@@ -141,6 +141,16 @@ The theme includes JavaScript linting with ESLint and WordPress JavaScript codin
 - **WordPress ESLint Plugin** - WordPress-specific JavaScript coding rules
 - **Prettier** - Code formatting integration
 
+### Approach
+
+This theme uses modern WordPress development practices:
+
+- **Frontend**: WordPress Interactivity API (WordPress 6.5+) with vanilla JavaScript fallback
+- **Admin/Backend**: React components for WordPress admin interfaces
+- **No jQuery dependency** - Uses native browser APIs and WordPress Interactivity API
+
+The Interactivity API is the recommended approach for frontend interactivity in modern WordPress themes. For more information, see the [WordPress Interactivity API documentation](https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/).
+
 ### Setup
 
 1. Install NPM dependencies:
@@ -175,20 +185,21 @@ The JavaScript linting is configured in `.eslintrc.json` which includes:
 
 - WordPress JavaScript coding standards
 - ES6+ compatibility
-- Browser and jQuery environment support
+- Browser environment support
+- WordPress Interactivity API and vanilla JavaScript support
 - Custom rules for indentation (tabs), quotes (single), and semicolons
 
 ### What Gets Checked
 
 - **Code formatting** - Indentation (tabs), spacing, quotes, semicolons
 - **JavaScript best practices** - Variable usage, function definitions
-- **WordPress JavaScript standards** - jQuery usage, global variables
+- **WordPress JavaScript standards** - Interactivity API usage, global variables
 - **JSDoc comments** - Function documentation
 - **ES6+ compatibility** - Modern JavaScript features
 
 ### Example JavaScript Structure
 
-Following WordPress coding standards, JavaScript should be structured like this:
+Following WordPress coding standards with Interactivity API, JavaScript should be structured like this:
 
 ```javascript
 /**
@@ -197,9 +208,9 @@ Following WordPress coding standards, JavaScript should be structured like this:
  * @package HelloPlus
  */
 
-/* eslint-env browser, jquery */
+/* eslint-env browser */
 
-( function( $ ) {
+document.addEventListener('DOMContentLoaded', function () {
 	'use strict';
 
 	/**
@@ -211,11 +222,30 @@ Following WordPress coding standards, JavaScript should be structured like this:
 		// Theme initialization code
 	}
 
-	// Initialize when DOM is ready
-	$( document ).ready( function() {
-		initTheme();
-	} );
-}( jQuery ) );
+	/**
+	 * Example WordPress Interactivity API usage
+	 *
+	 * @return {void}
+	 */
+	function initInteractivityFeatures() {
+		if (typeof wp !== 'undefined' && wp.interactivity) {
+			// Use Interactivity API for modern WordPress (6.5+)
+			wp.interactivity.state({
+				theme: {
+					isMenuOpen: false
+				}
+			});
+		} else {
+			// Fallback to vanilla JavaScript
+			const menuToggle = document.querySelector('.menu-toggle');
+			// Handle interactions manually
+		}
+	}
+
+	// Initialize functionality
+	initTheme();
+	initInteractivityFeatures();
+});
 ```
 
 ## Pre-commit Hooks

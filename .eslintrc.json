@@ -5,14 +5,10 @@
 	"env": {
 		"browser": true,
 		"es6": true,
-		"node": true,
-		"jquery": true
+		"node": true
 	},
 	"globals": {
-		"wp": "readonly",
-		"jQuery": "readonly",
-		"$": "readonly",
-		"ajaxurl": "readonly"
+		"wp": "readonly"
 	},
 	"parserOptions": {
 		"ecmaVersion": 2020,

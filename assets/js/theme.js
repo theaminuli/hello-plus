@@ -1,17 +1,18 @@
 /**
  * Sample JavaScript for Hello Plus theme
- * This file demonstrates JS linting and formatting capabilities
+ * This file demonstrates JS linting and formatting capabilities using WordPress Interactivity API
  *
  * @package HelloPlus
  */
 
-/* eslint-env browser, jquery */
+/* eslint-env browser */
 
-(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 	'use strict';
 
 	/**
 	 * Initializes the theme JavaScript functionality
+	 *
 	 * @return {void}
 	 */
 	function initTheme() {
@@ -21,25 +22,30 @@
 	}
 
 	/**
-	 * Handles responsive navigation toggle
-	 * @param {jQuery} $menuToggle - The menu toggle button element
-	 * @param {jQuery} $navigation - The navigation menu element
+	 * Handles responsive navigation toggle using native JavaScript
+	 *
+	 * @param {Element} menuToggle - The menu toggle button element
+	 * @param {Element} navigation - The navigation menu element
 	 * @return {void}
 	 */
-	function handleNavigationToggle($menuToggle, $navigation) {
-		if (!$menuToggle.length || !$navigation.length) {
+	function handleNavigationToggle(menuToggle, navigation) {
+		if (!menuToggle || !navigation) {
 			return;
 		}
 
-		$menuToggle.on('click', function (event) {
+		menuToggle.addEventListener('click', function (event) {
 			event.preventDefault();
-			$navigation.toggleClass('is-open');
-			$(this).attr('aria-expanded', $navigation.hasClass('is-open'));
+			navigation.classList.toggle('is-open');
+			menuToggle.setAttribute(
+				'aria-expanded',
+				navigation.classList.contains('is-open')
+			);
 		});
 	}
 
 	/**
 	 * Validates user input for theme settings
+	 *
 	 * @param {string} input - The raw user input to validate
 	 * @param {string} type  - The expected type (email, url, text, etc.)
 	 * @return {Object} An object containing {isValid: boolean, sanitized: string, error?: string}
@@ -89,19 +95,48 @@
 		};
 	}
 
-	// Initialize when DOM is ready
-	$(document).ready(function () {
-		initTheme();
+	/**
+	 * Example of WordPress Interactivity API usage (when available)
+	 * This demonstrates how to structure interactive components
+	 *
+	 * @return {void}
+	 */
+	function initInteractivityFeatures() {
+		// Check if wp.interactivity is available (WordPress 6.5+)
+		if (typeof wp !== 'undefined' && wp.interactivity) {
+			// Example: Register interactive behavior
+			// This would be used with data-wp-interactive attribute in HTML
+			/*
+			wp.interactivity.state({
+				theme: {
+					isMenuOpen: false
+				}
+			});
 
-		// Initialize navigation toggle
-		const $menuToggle = $('.menu-toggle');
-		const $navigation = $('.main-navigation');
-		handleNavigationToggle($menuToggle, $navigation);
-
-		// Example usage of validateUserInput to avoid unused variable warning
-		const emailResult = validateUserInput('test@example.com', 'email');
-		if (emailResult.isValid) {
-			// Process valid email
+			wp.interactivity.actions({
+				theme: {
+					toggleMenu: () => {
+						const { state } = wp.interactivity.getContext();
+						state.theme.isMenuOpen = !state.theme.isMenuOpen;
+					}
+				}
+			});
+			*/
+		} else {
+			// Fallback to vanilla JavaScript for older WordPress versions
+			const menuToggle = document.querySelector('.menu-toggle');
+			const navigation = document.querySelector('.main-navigation');
+			handleNavigationToggle(menuToggle, navigation);
 		}
-	});
-})(jQuery);
+	}
+
+	// Initialize theme functionality
+	initTheme();
+	initInteractivityFeatures();
+
+	// Example usage of validateUserInput to demonstrate the function
+	const emailResult = validateUserInput('test@example.com', 'email');
+	if (emailResult.isValid) {
+		// Process valid email
+	}
+});
