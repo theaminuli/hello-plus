@@ -1,0 +1,29 @@
+{
+  "name": "hello-plus",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Hello Plus is a lightweight, fast, and customizable WordPress theme built for speed and flexibility",
+  "scripts": {
+    "lint:js": "eslint \"**/*.js\" --fix",
+    "lint:css": "stylelint \"**/*.css\" --fix",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:check": "eslint \"**/*.js\" && stylelint \"**/*.css\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "@eslint/js": "^9.9.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "stylelint": "^16.8.2",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "hello-plus"
+  ],
+  "author": "Aminul",
+  "license": "GPL-3.0"
+}

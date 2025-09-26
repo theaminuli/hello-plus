@@ -20,3 +20,17 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+### Node.js ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### VS Code ###
+!.vscode/settings.json
+!.vscode/extensions.json
+
+### Temporary files ###
+.tmp/
+temp/
