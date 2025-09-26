@@ -1,0 +1,31 @@
+{
+	"name": "hello-plus",
+	"private": true,
+	"version": "1.0.0",
+	"description": "Hello Plus is a lightweight, fast, and customizable WordPress theme built for speed and flexibility",
+	"author": "theaminuli",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"theme",
+		"hello-plus",
+		"modern",
+		"responsive"
+	],
+	"homepage": "https://github.com/theaminuli/hello-plus#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/theaminuli/hello-plus.git"
+	},
+	"bugs": {
+		"url": "https://github.com/theaminuli/hello-plus/issues"
+	},
+	"devDependencies": {
+		"@wordpress/stylelint-config": "^20.0.2",
+		"stylelint": "^14.10.0"
+	},
+	"scripts": {
+		"lint:css": "stylelint **/*.css -i .gitignore",
+		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix"
+	}
+}
