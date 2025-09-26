@@ -2,7 +2,7 @@
 
 name: Bug report
 
-description: Report a bug with the PageFlash WordPress plugin
+description: Report a bug with the Hello Plus WordPress theme
 
 labels: ['[Type] Bug']
 
@@ -10,14 +10,14 @@ body:
     - type: markdown
       attributes:
           value: |
-              Thank you for taking the time to report a bug in the PageFlash plugin! If this is a security issue, please report it privately at https://github.com/theaminuli/pageflash/security.
+              Thank you for taking the time to report a bug in the Hello Plus theme! If this is a security issue, please report it privately at https://github.com/theaminuli/hello-plus/security.
 
     - type: textarea
       attributes:
           label: Description
           description: Please provide a detailed description of the bug, including what you expected to happen and what is currently happening.
           placeholder: |
-              Feature '...' is not working properly. I expect '...' to happen, but '...' happens instead.
+              Theme feature '...' is not working properly. I expect '...' to happen, but '...' happens instead.
       validations:
           required: true
 
@@ -45,11 +45,11 @@ body:
       attributes:
           label: Environment info
           description: |
-              Provide details about your environment, including WordPress version, PageFlash version, and other relevant information.
+              Provide details about your environment, including WordPress version, Hello Plus theme version, and other relevant information.
           placeholder: |
               - WordPress version
-              - PageFlash version
-              - Active theme
+              - Hello Plus theme version
+              - Active plugins
               - Browser(s) tested on
               - Device and operating system
       validations:
@@ -59,7 +59,7 @@ body:
       id: existing
       attributes:
           label: Please confirm you have searched existing issues in the repository.
-          description: You can search at https://github.com/theaminuli/pageflash/issues to ensure the bug has not already been reported.
+          description: You can search at https://github.com/theaminuli/hello-plus/issues to ensure the bug has not already been reported.
           options:
               - label: 'Yes'
                 required: true
@@ -67,8 +67,8 @@ body:
     - type: checkboxes
       id: plugins
       attributes:
-          label: Please confirm you have tested with other plugins deactivated.
-          description: Ensure the issue is not caused by a conflict with other plugins.
+          label: Please confirm you have tested with plugins deactivated.
+          description: Ensure the issue is not caused by a conflict with plugins.
           options:
               - label: 'Yes'
                 required: true
@@ -76,9 +76,10 @@ body:
     - type: checkboxes
       id: themes
       attributes:
-          label: Please confirm which theme type you used during testing.
+          label: Please confirm the WordPress setup you used during testing.
           options:
-              - label: 'Block'
-              - label: 'Classic'
-              - label: 'Hybrid (e.g., classic with theme.json)'
+              - label: 'Block theme (Full Site Editing)'
+              - label: 'Classic theme compatibility mode'
+              - label: 'Fresh WordPress installation'
+              - label: 'Existing WordPress site'
               - label: 'Not sure'
