@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ruleset name="Hello Plus WordPress Coding Standards">
+    <description>Coding standards configuration for Hello Plus WordPress theme</description>
+
+    <!-- Files to check -->
+    <file>.</file>
+
+    <!-- Exclude vendor and node_modules directories -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/.git/*</exclude-pattern>
+    <exclude-pattern>*/.github/*</exclude-pattern>
+
+    <!-- Show sniff codes in all reports -->
+    <arg value="ps"/>
+
+    <!-- Use colors in output -->
+    <arg name="colors"/>
+
+    <!-- Show progress -->
+    <arg value="p"/>
+
+    <!-- Set the minimum supported PHP version -->
+    <config name="minimum_supported_wp_version" value="6.0"/>
+
+    <!-- Include WordPress coding standards -->
+    <rule ref="WordPress">
+        <!-- Allow short array syntax -->
+        <exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+        
+        <!-- Exclude some spacing rules that might conflict with modern PHP -->
+        <exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+    </rule>
+
+    <!-- Check for PHP compatibility -->
+    <rule ref="PHPCompatibility"/>
+    
+    <!-- Set minimum PHP version for compatibility check -->
+    <config name="testVersion" value="7.4-"/>
+
+    <!-- WordPress specific rules -->
+    <rule ref="WordPress.Files.FileName">
+        <properties>
+            <property name="strict_class_file_names" value="false"/>
+        </properties>
+    </rule>
+
+    <!-- Allow theme-specific naming conventions -->
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <properties>
+            <property name="prefixes" type="array">
+                <element value="hello_plus"/>
+                <element value="helloplus"/>
+            </property>
+        </properties>
+    </rule>
+</ruleset>

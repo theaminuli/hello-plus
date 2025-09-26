@@ -26,6 +26,10 @@
 	},
 	"scripts": {
 		"lint:css": "stylelint **/*.css -i .gitignore",
-		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix"
+		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix",
+		"lint:php": "composer run lint",
+		"lint:php:fix": "composer run lint:fix",
+		"format:php": "composer run format",
+		"check:php": "composer run check"
 	}
 }
