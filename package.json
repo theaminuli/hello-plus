@@ -33,7 +33,7 @@
 	"scripts": {
 		"build": "wp-scripts build",
 		"dev": "wp-scripts start",
-		"lint:css": "wp-scripts lint-style 'src/**/*.css'",
+		"lint:css": "wp-scripts lint-style 'src/**/*.{css,scss}' '*.css'",
 		"lint:js": "wp-scripts lint-js 'src/**/*.js'",
 		"format": "wp-scripts format",
 		"format:php": "composer run format",
