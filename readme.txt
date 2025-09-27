@@ -41,9 +41,4 @@ Yes, Hello Plus is fully responsive and works on all device sizes.
 == Changelog ==
 
 = 1.0.0 =
-* Initial release
-
-== Upgrade Notice ==
-
-= 1.0.0 =
 Initial release of Hello Plus theme.
