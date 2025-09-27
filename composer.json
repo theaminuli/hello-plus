@@ -5,8 +5,10 @@
     "license": "GPL-3.0-or-later",
     "authors": [
         {
-            "name": "theaminuli"
-        }
+			"name": "Aminul Islam",
+			"email": "hello@theaminul.com",
+			"role": "Developer"
+		}
     ],
     "require": {
         "php": ">=7.4"
@@ -16,6 +18,22 @@
         "wp-coding-standards/wpcs": "^3.0",
         "phpcompatibility/php-compatibility": "^9.3"
     },
+	"exclude": [
+		"/node_modules",
+		"/vendor",
+		"/tests",
+		"/.git",
+		"/.github",
+		"/.vscode",
+		"/build"
+	],
+	"archive": {
+		"exclude": [
+			"/node_modules",
+			"/vendor",
+			"/src"
+		]
+	},
     "scripts": {
         "phpcs": "phpcs",
         "phpcbf": "phpcbf",
