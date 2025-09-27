@@ -201,8 +201,6 @@ The theme includes JavaScript linting with ESLint and WordPress JavaScript codin
 - **WordPress ESLint Plugin** - WordPress-specific JavaScript coding rules
 - **@wordpress/scripts** - Complete WordPress development toolkit
 - **Webpack** - Module bundler for modern JavaScript development (via wp-scripts)
-- **Babel** - JavaScript transpilation (via wp-scripts)
-- **PostCSS** - CSS processing (via wp-scripts)
 
 ### Approach
 
