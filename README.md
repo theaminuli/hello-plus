@@ -42,7 +42,6 @@ npm install
 # Build assets
 npm run build        # Production build
 npm run dev          # Development build
-npm run watch        # Development build with file watching
 
 # Check PHP code
 composer run check
