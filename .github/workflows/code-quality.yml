@@ -1,47 +1,47 @@
 name: Code Quality
 
 on:
-  pull_request:
-    branches: [ main, development ]
+    pull_request:
+        branches: [main, development]
 
 jobs:
-  code-quality:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    code-quality:
+        runs-on: ubuntu-latest
 
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '7.4'
-        extensions: mbstring, xml, ctype, json
-        tools: composer
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '7.4'
+                  extensions: mbstring, xml, ctype, json
+                  tools: composer
 
-    - name: Install Composer dependencies
-      run: composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '18'
+                  cache: 'npm'
 
-    - name: Install NPM dependencies
-      run: npm install
+            - name: Install Composer dependencies
+              run: composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
 
-    - name: Run PHP CodeSniffer
-      run: composer run check
+            - name: Install NPM dependencies
+              run: npm install
 
-    - name: Run CSS Linting
-      run: npm run lint:css
+            - name: Run PHP CodeSniffer
+              run: composer run check
 
-    - name: Run JavaScript Linting
-      run: npm run lint:js
+            - name: Run CSS Linting
+              run: npm run lint:css
 
-    - name: Run PHP Linting
-      run: npm run lint:php
+            - name: Run JavaScript Linting
+              run: npm run lint:js
 
-    - name: Check PHP compatibility
-      run: ./vendor/bin/phpcs --standard=PHPCompatibility --runtime-set testVersion 7.4- *.php
+            - name: Run PHP Linting
+              run: npm run lint:php
+
+            - name: Check PHP compatibility
+              run: ./vendor/bin/phpcs --standard=PHPCompatibility --runtime-set testVersion 7.4- *.php
