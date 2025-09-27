@@ -6,6 +6,8 @@ vendor/
 .build/
 dist/
 .cache/
+assets/js/*.min.js
+assets/css/*.min.css
 
 # Development
 .vscode/

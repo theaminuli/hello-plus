@@ -21,16 +21,30 @@
 		"url": "https://github.com/theaminuli/hello-plus/issues"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.28.4",
+		"@babel/preset-env": "^7.28.3",
 		"@wordpress/eslint-plugin": "^22.17.0",
 		"@wordpress/stylelint-config": "^20.0.2",
+		"babel-loader": "^10.0.0",
+		"core-js": "^3.45.1",
+		"css-loader": "^7.1.2",
 		"eslint": "^8.57.1",
-		"stylelint": "^14.10.0"
+		"mini-css-extract-plugin": "^2.9.4",
+		"style-loader": "^4.0.0",
+		"stylelint": "^14.10.0",
+		"webpack": "^5.101.3",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.2"
 	},
 	"scripts": {
+		"build": "webpack --mode production",
+		"dev": "webpack --mode development",
+		"watch": "webpack --mode development --watch",
+		"serve": "webpack serve --mode development",
 		"lint:css": "stylelint **/*.css -i .gitignore",
 		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix",
-		"lint:js": "eslint **/*.js --ignore-path .gitignore --no-error-on-unmatched-pattern",
-		"lint:js:fix": "eslint **/*.js --ignore-path .gitignore --fix --no-error-on-unmatched-pattern",
+		"lint:js": "eslint src/**/*.js --no-error-on-unmatched-pattern",
+		"lint:js:fix": "eslint src/**/*.js --fix --no-error-on-unmatched-pattern",
 		"lint": "npm run lint:css && npm run lint:js",
 		"lint:fix": "npm run lint:css:fix && npm run lint:js:fix",
 		"format": "npm run lint:fix",
