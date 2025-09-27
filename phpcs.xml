@@ -2,7 +2,7 @@
 <ruleset name="Hello Plus WordPress Coding Standards">
     <description>Coding standards configuration for Hello Plus WordPress theme</description>
 
-    <!-- Files to check -->
+    <!-- Files to check - Only PHP files -->
     <file>.</file>
 
     <!-- Exclude vendor and node_modules directories -->
@@ -10,6 +10,13 @@
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <exclude-pattern>*/.git/*</exclude-pattern>
     <exclude-pattern>*/.github/*</exclude-pattern>
+    
+    <!-- Exclude non-PHP files -->
+    <exclude-pattern>*.js</exclude-pattern>
+    <!-- Exclude common directories -->
+    <exclude-pattern>*/assets/*</exclude-pattern>
+    <exclude-pattern>*/build/*</exclude-pattern>
+    <exclude-pattern>*/dist/*</exclude-pattern>
 
     <!-- Show sniff codes in all reports -->
     <arg value="ps"/>

@@ -39,5 +39,11 @@ jobs:
     - name: Run CSS Linting
       run: npm run lint:css
 
+    - name: Run JavaScript Linting
+      run: npm run lint:js
+
+    - name: Run PHP Linting
+      run: npm run lint:php
+
     - name: Check PHP compatibility
       run: ./vendor/bin/phpcs --standard=PHPCompatibility --runtime-set testVersion 7.4- *.php
