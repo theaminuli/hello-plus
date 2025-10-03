@@ -37,6 +37,8 @@
         
         <!-- Exclude some spacing rules that might conflict with modern PHP -->
         <exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
     </rule>
 
     <!-- Check for PHP compatibility -->
