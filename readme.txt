@@ -1,6 +1,6 @@
 === Hello Plus ===
 
-Contributors: theaminuli
+Contributors: theaminuldev
 Tags: lightweight, fast, customizable, responsive, modern
 Requires at least: 6.0
 Tested up to: 6.8
@@ -39,7 +39,9 @@ Yes, Hello Plus is fully compatible with the Gutenberg block editor.
 Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
-
+= 1.0.2 =
+Fixed: Add Author URI for front-end credit link compliance
+Fixed: Contributor name issue in readme.txt
 = 1.0.0 =
 Initial release of Hello Plus theme.
 
