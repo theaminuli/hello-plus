@@ -32,7 +32,20 @@ define( 'HELLO_PLUS_URL', get_template_directory_uri() );
 function hello_plus_setup() {
 	// Make theme available for translation.
 	load_theme_textdomain( 'hello-plus', HELLO_PLUS_PATH . '/languages' );
-	add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
+	add_theme_support(
+		'post-formats',
+		array(
+			'aside',
+			'audio',
+			'chat',
+			'gallery',
+			'image',
+			'link',
+			'quote',
+			'status',
+			'video',
+		)
+	);
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
