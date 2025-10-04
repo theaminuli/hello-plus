@@ -6,11 +6,7 @@
 		"color": {
 			"duotone": [
 				{
-					"colors": [
-						"#FF99FF",
-						"#FFFF99",
-						"#99FFFF"
-					],
+					"colors": [ "#FF99FF", "#FFFF99", "#99FFFF" ],
 					"name": "Default filter",
 					"slug": "default-filter"
 				}

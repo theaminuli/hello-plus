@@ -34,7 +34,7 @@
 		"dev": "wp-scripts start",
 		"lint:css": "wp-scripts lint-style 'src/**/*.{css,scss}' '*.css'",
 		"lint:js": "wp-scripts lint-js 'src/**/*.js'",
-		"format": "wp-scripts format",
+		"format": "wp-scripts format '**/*.{js,css,scss,php}'",
 		"format:php": "composer run format",
 		"lint:php": "composer run lint",
 		"lint:php:fix": "composer run lint:fix",

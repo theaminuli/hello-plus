@@ -7,7 +7,7 @@
 
 /* eslint-env browser */
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener( 'DOMContentLoaded', function () {
 	'use strict';
 
 	/**
@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	function initTheme() {
 		// Sample theme initialization
 		// eslint-disable-next-line no-console
-		console.log('Hello Plus theme initialized');
+		console.log( 'Hello Plus theme initialized' );
 	}
 
 	initTheme();
-});
+} );

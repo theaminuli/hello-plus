@@ -113,8 +113,8 @@
 				}
 			]
 		}
-  },
-  "styles": {
+	},
+	"styles": {
 		"blocks": {
 			"core/comment-author-name": {
 				"elements": {
