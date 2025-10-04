@@ -40,6 +40,7 @@
 		"lint:php:fix": "composer run lint:fix",
 		"check:php": "composer run check",
 		"packages-update": "wp-scripts packages-update",
+		"update-version": "node update-version-and-changelog.js",
 		"plugin-zip": "wp-scripts plugin-zip"
 	}
 }
