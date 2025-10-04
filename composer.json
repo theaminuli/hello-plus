@@ -1,7 +1,7 @@
 {
 	"name": "theaminuli/hello-plus",
 	"description": "Hello Plus is a lightweight, fast, and customizable WordPress theme built for speed and flexibility",
-	"type": "project",
+	"type": "theme",
 	"license": "GPL-3.0-or-later",
 	"authors": [
 		{
@@ -49,6 +49,7 @@
 	"config": {
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
+		},
+		"archive-format": "zip"
 	}
 }

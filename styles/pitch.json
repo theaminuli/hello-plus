@@ -132,7 +132,7 @@
 		"blocks": {
 			"core/separator": {
 				"border": {
-					"color":"var(--wp--preset--color--tertiary)",
+					"color": "var(--wp--preset--color--tertiary)",
 					"width": "2px"
 				}
 			},
