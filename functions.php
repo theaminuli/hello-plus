@@ -36,9 +36,9 @@ function hello_plus_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary'   => esc_html__( 'Primary Navigation', 'hello-plus' ),
-			'footer'    => esc_html__( 'Footer Navigation', 'hello-plus' ),
-			'social'    => esc_html__( 'Social Links', 'hello-plus' ),
+			'primary' => esc_html__( 'Primary Navigation', 'hello-plus' ),
+			'footer'  => esc_html__( 'Footer Navigation', 'hello-plus' ),
+			'social'  => esc_html__( 'Social Links', 'hello-plus' ),
 		)
 	);
 }
@@ -82,10 +82,10 @@ function hello_plus_scripts() {
 		'hello-plus-script',
 		'helloPlusData',
 		array(
-			'ajaxUrl'          => admin_url( 'admin-ajax.php' ),
-			'nonce'            => wp_create_nonce( 'hello_plus_nonce' ),
-			'themeUrl'         => HELLO_PLUS_URL,
-			'isUserLoggedIn'   => is_user_logged_in(),
+			'ajaxUrl'        => admin_url( 'admin-ajax.php' ),
+			'nonce'          => wp_create_nonce( 'hello_plus_nonce' ),
+			'themeUrl'       => HELLO_PLUS_URL,
+			'isUserLoggedIn' => is_user_logged_in(),
 		)
 	);
 }
