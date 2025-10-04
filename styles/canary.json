@@ -6,10 +6,7 @@
 		"color": {
 			"duotone": [
 				{
-					"colors": [
-						"#000000",
-						"#ffffff"
-					],
+					"colors": [ "#000000", "#ffffff" ],
 					"slug": "default-filter",
 					"name": "Default filter"
 				}
@@ -91,7 +88,7 @@
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
-			"core/comments-title":{
+			"core/comments-title": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}

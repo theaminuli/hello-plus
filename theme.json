@@ -1,25 +1,20 @@
 {
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": [ "page", "post" ],
 			"title": "Blank"
 		},
 		{
 			"name": "blog-alternative",
-			"postTypes": [
-				"page"
-			],
+			"postTypes": [ "page" ],
 			"title": "Blog (Alternative)"
 		},
 		{
 			"name": "404",
-			"postTypes": [
-				"page"
-			],
+			"postTypes": [ "page" ],
 			"title": "404"
 		}
 	],
@@ -92,14 +87,7 @@
 					"slug": "80"
 				}
 			],
-			"units": [
-				"%",
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw"
-			]
+			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
 		},
 		"typography": {
 			"defaultFontSizes": false,
@@ -734,7 +722,5 @@
 			"name": "post-meta",
 			"title": "Post Meta"
 		}
-	],
-	"version": 3,
-	"$schema": "https://schemas.wp.org/trunk/theme.json"
+	]
 }

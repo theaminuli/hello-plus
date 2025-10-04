@@ -39,6 +39,12 @@ Yes, Hello Plus is fully compatible with the Gutenberg block editor.
 Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
+= 1.5.0 =
+Added: Theme support for navigation menus
+Added: Support for post formats
+Improved: CSS and JS file build optimization for better performance
+Improved: Theme security and overall code quality
+
 = 1.0.2 =
 Fixed: Add Author URI for front-end credit link compliance
 Fixed: Contributor name issue in readme.txt
