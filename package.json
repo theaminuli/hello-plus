@@ -41,6 +41,7 @@
 		"check:php": "composer run check",
 		"packages-update": "wp-scripts packages-update",
 		"update-version": "node update-version-and-changelog.js",
-		"plugin-zip": "wp-scripts plugin-zip"
+		"plugin-zip": "wp-scripts plugin-zip",
+		"zip": "concurrently \"wp-scripts build\" && composer archive --file=../dist/hello-plus"
 	}
 }

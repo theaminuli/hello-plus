@@ -54,3 +54,6 @@ package.json export-ignore
 webpack.config.js export-ignore
 *.map export-ignore
 .DS_Store export-ignore
+.eslintrc.json export-ignore
+CONTRIBUTORS.md export-ignore
+update-version-and-changelog.js export-ignore
