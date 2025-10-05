@@ -3,6 +3,7 @@
 Contributors: theaminuldev
 Tags: lightweight, fast, customizable, responsive, modern
 Requires at least: 6.0
+Stable tag: 1.5.0
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -40,29 +41,12 @@ Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
 
-= 1.1.0 =
-* Merge pull request #47 from theaminuli/development
-* Merge pull request #46 from theaminuli/aminul/dev
-* Fix formatting in release PR body for better readability
-* Merge pull request #44 from theaminuli/development
-* Merge pull request #43 from theaminuli/aminul/dev
-* Merge branch 'development' into aminul/dev
-* Update release workflow: downgrade actions versions and streamline git commands
-* Merge pull request #42 from theaminuli/development
-* Merge pull request #41 from theaminuli/aminul/dev
-* Refactor release workflow: restructured git commands for better clarity and reliability
-* Merge pull request #40 from theaminuli/development
-* Merge pull request #39 from theaminuli/aminul/dev
-* Update GitHub Actions workflow: upgrade actions versions and fix base branch for PR creation
-* Merge pull request #38 from theaminuli/development
-* Merge pull request #37 from theaminuli/aminul/dev
-* Removed unsupported post formats from theme setup
 = 1.5.0 =
 Added: Theme support for navigation menus
 Added: Support for post formats
 Improved: CSS and JS file build optimization for better performance
 Improved: Theme security and overall code quality
-
+Fixed: Formatting in release PR body for better readability
 = 1.0.2 =
 Fixed: Add Author URI for front-end credit link compliance
 Fixed: Contributor name issue in readme.txt
