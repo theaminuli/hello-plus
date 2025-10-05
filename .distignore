@@ -25,7 +25,7 @@ test/
 .stylelintignore
 .stylelintrc.json
 .wp-env.json
-CONTRIBUTING.md
+CONTRIBUTORS.md
 CODE_QUALITY.md
 CHANGELOG.md
 README.md
