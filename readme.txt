@@ -3,7 +3,7 @@
 Contributors: theaminuldev
 Tags: lightweight, fast, customizable, responsive, modern
 Requires at least: 6.0
-Stable tag: 1.0.2
+Stable tag: 1.5.0
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
