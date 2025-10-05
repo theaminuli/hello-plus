@@ -39,6 +39,21 @@ Yes, Hello Plus is fully compatible with the Gutenberg block editor.
 Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
+
+= 1.1.0 =
+* Merge pull request #44 from theaminuli/development
+* Merge pull request #43 from theaminuli/aminul/dev
+* Merge branch 'development' into aminul/dev
+* Update release workflow: downgrade actions versions and streamline git commands
+* Merge pull request #42 from theaminuli/development
+* Merge pull request #41 from theaminuli/aminul/dev
+* Refactor release workflow: restructured git commands for better clarity and reliability
+* Merge pull request #40 from theaminuli/development
+* Merge pull request #39 from theaminuli/aminul/dev
+* Update GitHub Actions workflow: upgrade actions versions and fix base branch for PR creation
+* Merge pull request #38 from theaminuli/development
+* Merge pull request #37 from theaminuli/aminul/dev
+* Removed unsupported post formats from theme setup
 = 1.5.0 =
 Added: Theme support for navigation menus
 Added: Support for post formats
