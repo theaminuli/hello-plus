@@ -42,21 +42,16 @@ Yes, Hello Plus is fully responsive and works on all device sizes.
 == Changelog ==
 
 = 1.6.0 =
-* Merge pull request #52 from theaminuli/development
-* Merge pull request #51 from theaminuli/aminul/dev
-* Update deployment workflow to use dynamic versioning for WordPress theme
-
-= 1.5.0 =
-Added: Theme support for navigation menus
-Added: Support for post formats
-Improved: CSS and JS file build optimization for better performance
-Improved: Theme security and overall code quality
-Fixed: Formatting in release PR body for better readability
+* Added: Theme support for navigation menus
+* Added: Support for post formats
+* Improved: CSS and JS file build optimization for better performance
+* Improved: Theme security and overall code quality
+* Fixed: Formatting in release PR body for better readability
 = 1.0.2 =
-Fixed: Add Author URI for front-end credit link compliance
-Fixed: Contributor name issue in readme.txt
+* Fixed: Add Author URI for front-end credit link compliance
+* Fixed: Contributor name issue in readme.txt
 = 1.0.0 =
-Initial release of Hello Plus theme.
+* Initial release of Hello Plus theme.
 
 
 This theme bundles the following third-party resources:
