@@ -3,7 +3,7 @@
 Contributors: theaminuldev
 Tags: lightweight, fast, customizable, responsive, modern
 Requires at least: 6.0
-Stable tag: 1.1.0
+Stable tag: 1.0.2
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -40,11 +40,6 @@ Yes, Hello Plus is fully compatible with the Gutenberg block editor.
 Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
-
-= 1.1.0 =
-* Merge pull request #60 from theaminuli/development
-* Merge pull request #59 from theaminuli/aminul/dev
-* Revert version number from 1.5.0 to 1.0.2
 
 = 1.5.0 =
 * Added: Theme support for navigation menus
