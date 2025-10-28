@@ -42,15 +42,10 @@ Yes, Hello Plus is fully responsive and works on all device sizes.
 == Changelog ==
 
 = 1.2.0 =
-* Merge pull request #75 from theaminuli/development
-* Merge pull request #74 from theaminuli/aminul/dev
 * Fixed: Border styling issue from whisper.json
-* Merge pull request #73 from theaminuli/aminul/dev
-* Fixed: black theme Style variations and remove unused styles from style.css
-* Merge pull request #72 from theaminuli/aminul/dev
-* Delete style.css
 * Fixed: black theme Style variations and remove unused styles from style.css
 * Chore: remove unused canary.json style configuration
+* Cleanup: Remove unnecessary merge commits from changelog
 
 = 1.1.0 =
 * Added: Theme support for navigation menus
