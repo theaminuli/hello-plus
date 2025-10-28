@@ -45,49 +45,6 @@ h6 {
 	line-height: 1.2;
 }
 
-.entry-title {
-	margin-bottom: 0.5rem;
-}
-
-.entry-title a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.entry-title a:hover {
-	color: #0073aa;
-}
-
-/* Content */
-.entry-content {
-	margin-bottom: 2rem;
-}
-
-.entry-content p {
-	margin-bottom: 1rem;
-}
-
-/* Navigation */
-.posts-navigation {
-	margin-top: 3rem;
-	padding-top: 2rem;
-	border-top: 1px solid #eee;
-}
-
-/* No results */
-.no-results {
-	text-align: center;
-	padding: 3rem 0;
-}
-
-.page-title {
-	color: #666;
-}
-
-.page-content {
-	margin-top: 1rem;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
 	.site-main {
