@@ -3,7 +3,7 @@
 Contributors: theaminuldev
 Tags: lightweight, fast, customizable, responsive, modern
 Requires at least: 6.0
-Stable tag: 1.0.2
+Stable tag: 1.2.0
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -41,7 +41,13 @@ Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
 
-= 1.5.0 =
+= 1.2.0 =
+* Fixed: Border styling issue from whisper.json
+* Fixed: black theme Style variations and remove unused styles from style.css
+* Chore: remove unused canary.json style configuration
+* Cleanup: Remove unnecessary merge commits from changelog
+
+= 1.1.0 =
 * Added: Theme support for navigation menus
 * Added: Support for post formats
 * Improved: CSS and JS file build optimization for better performance
