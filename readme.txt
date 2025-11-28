@@ -3,7 +3,7 @@
 Contributors: theaminuldev
 Tags: blog, accessibility-ready, custom-logo, custom-menu, custom-colors, editor-style, featured-images, full-width-template,lightweight, fast, rtl-language-support, threaded-comments, wide-blocks, block-styles, flexible-header, theme-options, one-column, two-columns
 Requires at least: 6.0
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -40,6 +40,13 @@ Yes, Hello Plus is fully compatible with the Gutenberg block editor.
 Yes, Hello Plus is fully responsive and works on all device sizes.
 
 == Changelog ==
+
+= 1.3.0 =
+* Merge pull request #81 from theaminuli/development
+* Improved: Enhance README description for clarity and detail (#80)
+* Improved: Update README tags to reflect added features and compatibility (#79)
+* FAQ section to markdown table format (#78)
+* Added dev-note directory and updated .gitattributes and composer.json to exclude it from exports (#77)
 
 = 1.2.0 =
 * Fixed: Border styling issue from whisper.json
