@@ -9,11 +9,11 @@ Requires PHP: 7.4
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Hello Plus is a lightweight, fast, and customizable WordPress theme built for speed and flexibility.
+A lightweight, fast, and highly customizable WordPress theme built for speed, flexibility, and seamless integration with Gutenberg and page builders.
 
 == Description ==
 
-Hello Plus is a lightweight, fast, and customizable WordPress theme built for speed and flexibility. This theme is designed to provide an excellent foundation for any WordPress website while maintaining optimal performance and user experience.
+Hello Plus is a lightweight, fast, modern, and performance-optimized WordPress theme that combines the best of minimal design with powerful customization options. Built specifically to work seamlessly with the Gutenberg block editor, Hello Plus provides the perfect foundation for any type of website—from blogs and portfolios to business sites and online stores.
 
 Key Features:
 * Lightweight and fast-loading
