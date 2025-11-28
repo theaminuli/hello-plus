@@ -1,7 +1,7 @@
 === Hello Plus ===
 
 Contributors: theaminuldev
-Tags: lightweight, fast, customizable, responsive, modern
+Tags: blog, accessibility-ready, custom-logo, custom-menu, custom-colors, editor-style, featured-images, full-width-template,lightweight, fast, rtl-language-support, threaded-comments, wide-blocks, block-styles, flexible-header, theme-options, one-column, two-columns
 Requires at least: 6.0
 Stable tag: 1.2.0
 Tested up to: 6.8
