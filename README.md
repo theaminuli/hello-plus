@@ -47,23 +47,14 @@ Hello Plus is a lightweight, fast, and customizable WordPress theme built for sp
 
 ## 📌 Frequently Asked Questions (FAQ)
 
-#### 2. Does this theme work with Gutenberg?
-Absolutely. Hello Plus is fully compatible with the Gutenberg block editor and includes styling for all core blocks.
-
-#### 3. Does the theme support RTL languages?
-Yes. Hello Plus includes full RTL (Right-to-Left) language support.
-
-#### 4. Can I create a child theme?
-Yes. Hello Plus is child-theme-ready and follows WordPress best practices for customization.
-
-#### 5. Is the theme SEO-optimized?
-Yes. It includes semantic HTML, schema markup, and fast performance for better SEO.
-
-#### 6. Will my site be mobile-friendly?
-Definitely. Hello Plus is fully responsive and optimized for all screen sizes.
-
-#### 7. How do I get support?
-For free support, please use the WordPress.org support forum. Documentation is available on our website.
+| Question | Answer |
+|---------|--------|
+| **Does this theme work with Gutenberg?** | Yes. Hello Plus is fully compatible with the Gutenberg block editor and includes styling for all core blocks. |
+| **Does the theme support RTL languages?** | Yes. Hello Plus includes full RTL (Right-to-Left) language support. |
+| **Can I create a child theme?** | Yes. Hello Plus is child-theme-ready and follows WordPress best practices for customization. |
+| **Is the theme SEO-optimized?** | Yes. It includes semantic HTML, schema markup, and fast performance for better SEO. |
+| **Will my site be mobile-friendly?** | Definitely. Hello Plus is fully responsive and optimized for all screen sizes. |
+| **How do I get support?** | For free support, please use the WordPress.org support forum. Documentation is available on our website. |
 
 
 ## Development
