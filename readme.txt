@@ -31,22 +31,36 @@ Key Features:
 
 == Frequently Asked Questions ==
 
-= Does this theme support the Gutenberg editor? =
+= Does this theme work with Gutenberg? =
 
-Yes, Hello Plus is fully compatible with the Gutenberg block editor.
+Yes. Hello Plus is fully compatible with the Gutenberg block editor and includes styling for all core blocks.
 
-= Is this theme responsive? =
+= Does the theme support RTL languages? =
 
-Yes, Hello Plus is fully responsive and works on all device sizes.
+Yes. Hello Plus includes full RTL (Right-to-Left) language support.
+
+= Can I create a child theme? =
+
+Yes. Hello Plus is child-theme-ready and follows WordPress best practices for customization.
+
+= Is the theme SEO-optimized? =
+
+Yes. It includes semantic HTML, schema markup, and fast performance for better SEO.
+
+= Will my site be mobile-friendly? =
+
+Definitely. Hello Plus is fully responsive and optimized for all screen sizes.
+
+= How do I get support? =
+
+For free support, please use the WordPress.org support forum. Documentation is available on our website.
 
 == Changelog ==
 
 = 1.3.0 =
-* Merge pull request #81 from theaminuli/development
 * Improved: Enhance README description for clarity and detail (#80)
 * Improved: Update README tags to reflect added features and compatibility (#79)
-* FAQ section to markdown table format (#78)
-* Added dev-note directory and updated .gitattributes and composer.json to exclude it from exports (#77)
+* Improved: FAQ section for clarity and detail (#78)
 
 = 1.2.0 =
 * Fixed: Border styling issue from whisper.json
