@@ -25,7 +25,8 @@
 		"/.git",
 		"/.github",
 		"/.vscode",
-		"/build"
+		"/build",
+		"/dev-note"
 	],
 	"archive": {
 		"exclude": [
