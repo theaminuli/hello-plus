@@ -3,7 +3,7 @@
 Contributors: theaminuldev
 Tags: blog, accessibility-ready, custom-logo, custom-menu, custom-colors, editor-style, featured-images, full-width-template,lightweight, fast, rtl-language-support, threaded-comments, wide-blocks, block-styles, flexible-header, theme-options, one-column, two-columns
 Requires at least: 6.0
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -31,15 +31,36 @@ Key Features:
 
 == Frequently Asked Questions ==
 
-= Does this theme support the Gutenberg editor? =
+= Does this theme work with Gutenberg? =
 
-Yes, Hello Plus is fully compatible with the Gutenberg block editor.
+Yes. Hello Plus is fully compatible with the Gutenberg block editor and includes styling for all core blocks.
 
-= Is this theme responsive? =
+= Does the theme support RTL languages? =
 
-Yes, Hello Plus is fully responsive and works on all device sizes.
+Yes. Hello Plus includes full RTL (Right-to-Left) language support.
+
+= Can I create a child theme? =
+
+Yes. Hello Plus is child-theme-ready and follows WordPress best practices for customization.
+
+= Is the theme SEO-optimized? =
+
+Yes. It includes semantic HTML, schema markup, and fast performance for better SEO.
+
+= Will my site be mobile-friendly? =
+
+Definitely. Hello Plus is fully responsive and optimized for all screen sizes.
+
+= How do I get support? =
+
+For free support, please use the WordPress.org support forum. Documentation is available on our website.
 
 == Changelog ==
+
+= 1.3.0 =
+* Improved: Enhance README description for clarity and detail (#80)
+* Improved: Update README tags to reflect added features and compatibility (#79)
+* Improved: FAQ section for clarity and detail (#78)
 
 = 1.2.0 =
 * Fixed: Border styling issue from whisper.json
