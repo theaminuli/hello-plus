@@ -4,7 +4,7 @@ Contributors: theaminuldev
 Tags: blog, accessibility-ready, custom-logo, custom-menu, custom-colors, editor-style, featured-images, full-width-template,lightweight, fast, rtl-language-support, threaded-comments, wide-blocks, block-styles, flexible-header, theme-options, one-column, two-columns
 Requires at least: 6.0
 Stable tag: 1.4.0
-Version: 1.3.0
+Version: 1.4.0
 Tested up to: 7.0
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -59,6 +59,7 @@ For free support, please use the WordPress.org support forum. Documentation is a
 == Changelog ==
 
 = 1.4.0 =
+* Fixed: Automation Issue Update readme Stable tag and Version (#85)
 * Compatibility with WordPress up to version 7.0 (#83)
 * Merge branch 'trunk' into development
 * Update readme.txt

@@ -125,13 +125,22 @@ async function updateVersion() {
 		.join('\n');
 	const newChangelog = `== Changelog ==\n\n= ${newVersion} =\n${changelogChanges}`;
 	let newReadme = readme.replace('== Changelog ==', newChangelog);
-	// update version in readme.txt
+
+	// update Stable tag
 	newReadme = newReadme.replace(
 		/Stable tag: (.*)/,
 		`Stable tag: ${newVersion}`
 	);
+
+	// update Version
+	newReadme = newReadme.replace(
+		/Version: (.*)/,
+		`Version: ${newVersion}`
+	);
+
+	// write once
 	fs.writeFileSync('./readme.txt', newReadme);
-	console.info('✅  Readme version updated', currentTag, '=>', newTag);
+	console.info('✅ Readme fully updated', currentTag, '=>', newTag);
 
 	// update style.css version
 	const styleCssFile = fs.readFileSync('./style.css', 'utf8');
