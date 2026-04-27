@@ -60,20 +60,7 @@ For free support, please use the WordPress.org support forum. Documentation is a
 
 = 1.4.0 =
 * Fixed: Automation Issue Update readme Stable tag and Version (#85)
-* Compatibility with WordPress up to version 7.0 (#83)
-* Merge branch 'trunk' into development
-* Update readme.txt
-* Merge branch 'trunk' into development
-* Merge branch 'aminul/dev' into development
-* Improved: Enhance README description for clarity and detail
-* Merge branch 'development' into aminul/dev
-* Merge branch 'development' into aminul/dev
-* Improved: Update README tags to reflect added features and compatibility
-* Merge branch 'development' into aminul/dev
-* Refactor FAQ section to markdown table format
-* Update README with new sections and details
-* Merge branch 'development' into aminul/dev
-* Added dev-note directory and updated .gitattributes and composer.json to exclude it from exports
+* Tested up: Compatibility with WordPress up to version 7.0 (#83)
 
 = 1.3.0 =
 * Improved: Enhance README description for clarity and detail (#80)
