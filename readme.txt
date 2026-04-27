@@ -3,9 +3,9 @@
 Contributors: theaminuldev
 Tags: blog, accessibility-ready, custom-logo, custom-menu, custom-colors, editor-style, featured-images, full-width-template,lightweight, fast, rtl-language-support, threaded-comments, wide-blocks, block-styles, flexible-header, theme-options, one-column, two-columns
 Requires at least: 6.0
-Stable tag: 1.3.0
-Version: 1.3.0
-Tested up to: 6.8
+Stable tag: 1.4.0
+Version: 1.4.0
+Tested up to: 7.0
 Requires PHP: 7.4
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -57,6 +57,10 @@ Definitely. Hello Plus is fully responsive and optimized for all screen sizes.
 For free support, please use the WordPress.org support forum. Documentation is available on our website.
 
 == Changelog ==
+
+= 1.4.0 =
+* Fixed: Automation Issue Update readme Stable tag and Version (#85)
+* Tested up: Compatibility with WordPress up to version 7.0 (#83)
 
 = 1.3.0 =
 * Improved: Enhance README description for clarity and detail (#80)
