@@ -3,7 +3,7 @@
 Contributors: theaminuldev
 Tags: blog, accessibility-ready, custom-logo, custom-menu, custom-colors, editor-style, featured-images, full-width-template,lightweight, fast, rtl-language-support, threaded-comments, wide-blocks, block-styles, flexible-header, theme-options, one-column, two-columns
 Requires at least: 6.0
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 Version: 1.3.0
 Tested up to: 7.0
 Requires PHP: 7.4
@@ -57,6 +57,22 @@ Definitely. Hello Plus is fully responsive and optimized for all screen sizes.
 For free support, please use the WordPress.org support forum. Documentation is available on our website.
 
 == Changelog ==
+
+= 1.4.0 =
+* Compatibility with WordPress up to version 7.0 (#83)
+* Merge branch 'trunk' into development
+* Update readme.txt
+* Merge branch 'trunk' into development
+* Merge branch 'aminul/dev' into development
+* Improved: Enhance README description for clarity and detail
+* Merge branch 'development' into aminul/dev
+* Merge branch 'development' into aminul/dev
+* Improved: Update README tags to reflect added features and compatibility
+* Merge branch 'development' into aminul/dev
+* Refactor FAQ section to markdown table format
+* Update README with new sections and details
+* Merge branch 'development' into aminul/dev
+* Added dev-note directory and updated .gitattributes and composer.json to exclude it from exports
 
 = 1.3.0 =
 * Improved: Enhance README description for clarity and detail (#80)
