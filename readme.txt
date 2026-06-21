@@ -3,8 +3,8 @@
 Contributors: theaminuldev
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations
 Requires at least: 6.0
-Stable tag: 1.4.0
-Version: 1.4.0
+Stable tag: 1.5.0
+Version: 1.5.0
 Tested up to: 7.0
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -64,6 +64,14 @@ Definitely. Hello Plus is fully responsive and optimized for all screen sizes.
 For free support, please use the WordPress.org support forum. Documentation is available on our website.
 
 == Changelog ==
+
+= 1.5.0 =
+* Merge pull request #88 from theaminulai/release/2026-06-21/minor-release
+* Merge branch 'trunk' into release/2026-06-21/minor-release
+* Fix
+* Version bump & changelog update
+* Merge pull request #87 from theaminulai/Fixed-Replaced-unofficial-readme.txt-tags-with-approved-WordPress.org-taxonomy
+* Fixed: Replaced unofficial readme.txt tags with approved WordPress.org taxonomy
 
 = 1.4.0 =
 * Added: patterns/cta.php — missing Call to Action pattern referenced in home.html
