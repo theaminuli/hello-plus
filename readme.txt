@@ -66,14 +66,6 @@ For free support, please use the WordPress.org support forum. Documentation is a
 == Changelog ==
 
 = 1.5.0 =
-* Merge pull request #88 from theaminulai/release/2026-06-21/minor-release
-* Merge branch 'trunk' into release/2026-06-21/minor-release
-* Fix
-* Version bump & changelog update
-* Merge pull request #87 from theaminulai/Fixed-Replaced-unofficial-readme.txt-tags-with-approved-WordPress.org-taxonomy
-* Fixed: Replaced unofficial readme.txt tags with approved WordPress.org taxonomy
-
-= 1.4.0 =
 * Added: patterns/cta.php — missing Call to Action pattern referenced in home.html
 * Added: patterns/hidden-no-results-content.php — missing No Results pattern referenced in search.html
 * Added: rtl.css — RTL stylesheet for Arabic, Hebrew, Persian, Urdu and other RTL languages
@@ -83,6 +75,10 @@ For free support, please use the WordPress.org support forum. Documentation is a
 * Fixed: Replaced unofficial readme.txt tags with approved WordPress.org taxonomy
 * Improved: Rewrote theme description to reflect FSE, 6 style variations, and actual feature set
 * Improved: Version headers now in sync across readme.txt and style.css
+
+= 1.4.0 =
+* Fixed: Automation Issue Update readme Stable tag and Version (#85)
+* Tested up: Compatibility with WordPress up to version 7.0 (#83)
 
 = 1.3.0 =
 * Improved: Enhance README description for clarity and detail (#80)
