@@ -1,0 +1,137 @@
+# Copyright (C) 2024 theaminul
+# This file is distributed under the same license as the Hello Plus package.
+# theaminul <ai.xpeedstudio@gmail.com>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Hello Plus 1.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/hello-plus\n"
+"POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: hello-plus\n"
+
+#. Theme Name of the theme
+msgid "Hello Plus"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://theaminul.com/"
+msgstr ""
+
+#. Description of the theme
+msgid "Hello Plus is a lightweight, fast, and customizable WordPress theme built for speed and flexibility."
+msgstr ""
+
+#. Author of the theme
+msgid "theaminul"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://theaminul.com/"
+msgstr ""
+
+#: functions.php
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions.php
+msgid "Social Links"
+msgstr ""
+
+#: patterns/footer-default.php
+#. Translators: The Aminul link.
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: patterns/footer-default.php
+msgid "https://theaminul.com"
+msgstr ""
+
+#: patterns/hidden-heading.php
+#. Main heading for homepage
+msgctxt "Main heading for homepage"
+msgid "HelloPlus: Exploring Life & Philosophy."
+msgstr ""
+
+#: patterns/hidden-404.php
+#. Error code for a webpage that is not found.
+msgctxt "Error code for a webpage that is not found."
+msgid "404"
+msgstr ""
+
+#: patterns/hidden-404.php
+#. Message to convey that a webpage could not be found
+msgctxt "Message to convey that a webpage could not be found"
+msgid "This page could not be found."
+msgstr ""
+
+#: patterns/hidden-404.php
+#. label
+msgctxt "label"
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php
+#. placeholder for search field
+msgctxt "placeholder for search field"
+msgid "Search..."
+msgstr ""
+
+#: patterns/cta.php
+#. CTA heading
+msgctxt "CTA heading"
+msgid "Ready to get started?"
+msgstr ""
+
+#: patterns/cta.php
+#. CTA description
+msgctxt "CTA description"
+msgid "Build something beautiful with Hello Plus — the fast, flexible WordPress theme designed for everyone."
+msgstr ""
+
+#: patterns/cta.php
+#. CTA button label
+msgctxt "CTA button label"
+msgid "Get Started"
+msgstr ""
+
+#: patterns/hidden-no-results-content.php
+#. search results heading
+msgctxt "search results heading"
+msgid "Nothing found"
+msgstr ""
+
+#: patterns/hidden-no-results-content.php
+#. no search results message
+msgctxt "no search results message"
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: patterns/hidden-no-results-content.php
+#. label
+msgctxt "label"
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-no-results-content.php
+#. search input placeholder
+msgctxt "search input placeholder"
+msgid "Search\xe2\x80\xa6"
+msgstr ""
+
+#: patterns/hidden-no-results-content.php
+#. search button label
+msgctxt "search button label"
+msgid "Search"
+msgstr ""
