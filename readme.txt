@@ -66,10 +66,6 @@ For free support, please use the WordPress.org support forum. Documentation is a
 == Changelog ==
 
 = 1.4.0 =
-* Merge pull request #87 from theaminulai/Fixed-Replaced-unofficial-readme.txt-tags-with-approved-WordPress.org-taxonomy
-* Fixed: Replaced unofficial readme.txt tags with approved WordPress.org taxonomy
-
-= unreleased =
 * Added: patterns/cta.php — missing Call to Action pattern referenced in home.html
 * Added: patterns/hidden-no-results-content.php — missing No Results pattern referenced in search.html
 * Added: rtl.css — RTL stylesheet for Arabic, Hebrew, Persian, Urdu and other RTL languages
