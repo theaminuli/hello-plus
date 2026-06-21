@@ -3,8 +3,8 @@
 Contributors: theaminuldev
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations
 Requires at least: 6.0
-Stable tag: 1.4.0
-Version: 1.4.0
+Stable tag: 1.5.0
+Version: 1.5.0
 Tested up to: 7.0
 Requires PHP: 7.4
 License: GPL v3 or later
@@ -65,7 +65,7 @@ For free support, please use the WordPress.org support forum. Documentation is a
 
 == Changelog ==
 
-= 1.4.0 =
+= 1.5.0 =
 * Added: patterns/cta.php — missing Call to Action pattern referenced in home.html
 * Added: patterns/hidden-no-results-content.php — missing No Results pattern referenced in search.html
 * Added: rtl.css — RTL stylesheet for Arabic, Hebrew, Persian, Urdu and other RTL languages
@@ -75,6 +75,10 @@ For free support, please use the WordPress.org support forum. Documentation is a
 * Fixed: Replaced unofficial readme.txt tags with approved WordPress.org taxonomy
 * Improved: Rewrote theme description to reflect FSE, 6 style variations, and actual feature set
 * Improved: Version headers now in sync across readme.txt and style.css
+
+= 1.4.0 =
+* Fixed: Automation Issue Update readme Stable tag and Version (#85)
+* Tested up: Compatibility with WordPress up to version 7.0 (#83)
 
 = 1.3.0 =
 * Improved: Enhance README description for clarity and detail (#80)
