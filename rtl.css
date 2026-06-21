@@ -1,0 +1,121 @@
+/*
+ * RTL (Right-to-Left) Stylesheet — Hello Plus Theme
+ *
+ * WordPress loads this file automatically when the site language
+ * is set to an RTL language (Arabic, Hebrew, Persian, Urdu, etc.).
+ * Only override properties that are directional; symmetric rules
+ * (padding-top, margin-bottom, font-size, etc.) do NOT need repeating.
+ *
+ * @package HelloPlus
+ * @since 1.4.0
+ */
+
+/* =========================================================
+   Base Direction
+   ========================================================= */
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/* =========================================================
+   Layout — site-main padding (style.css defines padding: 2rem;
+   which is symmetric, but we correct any left-biased overrides)
+   ========================================================= */
+
+.site-main {
+	padding-right: 2rem;
+	padding-left:  2rem; /* keep symmetric */
+}
+
+@media (max-width: 768px) {
+	.site-main {
+		padding-right: 1rem;
+		padding-left:  1rem;
+	}
+}
+
+/* =========================================================
+   Blockquote / Quote block
+   theme.json adds border-left + padding-left; flip both.
+   ========================================================= */
+
+.wp-block-quote {
+	border-left:   none !important;
+	border-right:  1px solid !important;
+	padding-left:  0 !important;
+	padding-right: var(--wp--preset--spacing--30) !important;
+}
+
+/* Pullquote top/bottom borders are symmetric — no change needed. */
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+.wp-block-navigation {
+	text-align: right;
+}
+
+.wp-block-navigation .wp-block-navigation-item__content {
+	padding-left:  0;
+	padding-right: 0.5em;
+}
+
+/* =========================================================
+   Search block
+   ========================================================= */
+
+.wp-block-search__inside-wrapper {
+	flex-direction: row-reverse;
+}
+
+.wp-block-search__input {
+	border-radius: 0 2px 2px 0;
+}
+
+.wp-block-search .wp-block-search__button {
+	border-radius: 2px 0 0 2px;
+}
+
+/* =========================================================
+   Comments
+   ========================================================= */
+
+.wp-block-comment-author-avatar {
+	float:        right;
+	margin-right: 0;
+	margin-left:  1rem;
+}
+
+.comment-body,
+.wp-block-comments {
+	text-align: right;
+}
+
+/* =========================================================
+   Post meta / author block
+   ========================================================= */
+
+.wp-block-post-author__avatar {
+	float:        right;
+	margin-right: 0;
+	margin-left:  1rem;
+}
+
+/* =========================================================
+   Core separator (100px width variant — centered, no flip needed)
+   ========================================================= */
+
+/* =========================================================
+   Pagination arrows — swap prev/next arrow directions
+   ========================================================= */
+
+.wp-block-query-pagination-previous::before {
+	content: "\2192"; /* → */
+}
+
+.wp-block-query-pagination-next::after {
+	content: "\2190"; /* ← */
+}
