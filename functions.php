@@ -101,3 +101,129 @@ function hello_plus_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'hello_plus_scripts' );
+
+/**
+ * Output JSON-LD structured data (schema.org) in <head>.
+ *
+ * Outputs:
+ *  - WebSite schema on every page (enables Google Sitelinks Searchbox).
+ *  - Article / BlogPosting schema on single posts.
+ *  - BreadcrumbList schema on singular pages and posts.
+ *
+ * @since 1.4.0
+ *
+ * @return void
+ */
+function hello_plus_schema_markup() {
+	$schemas = array();
+
+	//  WebSite
+	$schemas[] = array(
+		'@context' => 'https://schema.org',
+		'@type'    => 'WebSite',
+		'name'     => get_bloginfo( 'name' ),
+		'url'      => home_url( '/' ),
+		'potentialAction' => array(
+			'@type'       => 'SearchAction',
+			'target'      => array(
+				'@type'       => 'EntryPoint',
+				'urlTemplate' => home_url( '/?s={search_term_string}' ),
+			),
+			'query-input' => 'required name=search_term_string',
+		),
+	);
+
+	// Article / BlogPosting (single posts only) 
+	if ( is_singular( 'post' ) ) {
+		$post        = get_queried_object();
+		$author_id   = $post->post_author;
+		$thumbnail   = get_the_post_thumbnail_url( $post->ID, 'full' );
+		$description = has_excerpt( $post->ID )
+			? wp_strip_all_tags( get_the_excerpt( $post->ID ) )
+			: wp_trim_words( wp_strip_all_tags( $post->post_content ), 30, '…' );
+
+		$article = array(
+			'@context'         => 'https://schema.org',
+			'@type'            => 'BlogPosting',
+			'headline'         => get_the_title( $post->ID ),
+			'description'      => $description,
+			'datePublished'    => get_the_date( 'c', $post->ID ),
+			'dateModified'     => get_the_modified_date( 'c', $post->ID ),
+			'url'              => get_permalink( $post->ID ),
+			'author'           => array(
+				'@type' => 'Person',
+				'name'  => get_the_author_meta( 'display_name', $author_id ),
+				'url'   => get_author_posts_url( $author_id ),
+			),
+			'publisher'        => array(
+				'@type' => 'Organization',
+				'name'  => get_bloginfo( 'name' ),
+				'url'   => home_url( '/' ),
+			),
+			'mainEntityOfPage' => array(
+				'@type' => 'WebPage',
+				'@id'   => get_permalink( $post->ID ),
+			),
+		);
+
+		if ( $thumbnail ) {
+			$article['image'] = $thumbnail;
+		}
+
+		$schemas[] = $article;
+	}
+
+	// BreadcrumbList (all singular content except front page)
+	if ( is_singular() && ! is_front_page() ) {
+		$breadcrumbs   = array();
+		$breadcrumbs[] = array(
+			'@type'    => 'ListItem',
+			'position' => 1,
+			'name'     => get_bloginfo( 'name' ),
+			'item'     => home_url( '/' ),
+		);
+
+		if ( is_singular( 'post' ) ) {
+			$categories = get_the_category();
+			if ( ! empty( $categories ) ) {
+				$breadcrumbs[] = array(
+					'@type'    => 'ListItem',
+					'position' => 2,
+					'name'     => esc_html( $categories[0]->name ),
+					'item'     => esc_url( get_category_link( $categories[0]->term_id ) ),
+				);
+				$breadcrumbs[] = array(
+					'@type'    => 'ListItem',
+					'position' => 3,
+					'name'     => esc_html( get_the_title() ),
+					'item'     => esc_url( get_permalink() ),
+				);
+			} else {
+				$breadcrumbs[] = array(
+					'@type'    => 'ListItem',
+					'position' => 2,
+					'name'     => esc_html( get_the_title() ),
+					'item'     => esc_url( get_permalink() ),
+				);
+			}
+		} else {
+			$breadcrumbs[] = array(
+				'@type'    => 'ListItem',
+				'position' => 2,
+				'name'     => esc_html( get_the_title() ),
+				'item'     => esc_url( get_permalink() ),
+			);
+		}
+
+		$schemas[] = array(
+			'@context'        => 'https://schema.org',
+			'@type'           => 'BreadcrumbList',
+			'itemListElement' => $breadcrumbs,
+		);
+	}
+
+	foreach ( $schemas as $schema ) {
+		echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+}
+add_action( 'wp_head', 'hello_plus_schema_markup' );
